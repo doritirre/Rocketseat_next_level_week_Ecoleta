@@ -1,42 +1,7 @@
-@charset "UTF-8";
-
-:root {
-    --title-color: #322153;
-    --primary-color: #34cb79;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font-family: Roboto, sans-serif;
-}
-
-a {
-    text-decoration: none;
-}
-
-body {
-    background: #f0f0f5;
-    -webkit-font-smoothing: antialiased;
-}
-
-h1, h2, h3, h4, h5, h6 {
-   font-family: 'ubuntu', sans-serif; 
-   color: var(--title-color);
-}
-/* 
-Elementos inline deixam o que está ao lado ficar do lado.
-Já o elemento block passa para a outra linha
-Toda caixa que no caso é um display, contém largura, altura, espaçamento
-preenchimentos, bordas, fundo, cor e a maneira como la é vista pelo HTML
-*/
 
 #page-home {
     height: 100vh;
-    background: url('assets/home-background.svg') no-repeat;
+    background: url('../assets/home-background.svg') no-repeat;
     background-position: 35vw bottom;
 }
 
@@ -66,7 +31,7 @@ preenchimentos, bordas, fundo, cor e a maneira como la é vista pelo HTML
 #page-home header a span {
     margin-right: 16px;
     display: flex;
-    background-image: url('assets/log-in.svg');
+    background-image: url('../assets/log-in.svg');
     width: 20px;
     height: 20px;    
 }
@@ -123,7 +88,7 @@ preenchimentos, bordas, fundo, cor e a maneira como la é vista pelo HTML
 
 #page-home main a span::after {
     content: "";
-    background-image: url('assets/search.png');
+    background-image: url('../assets/search.svg');
     width: 20px;
     height: 20px;
 }
@@ -132,27 +97,4 @@ preenchimentos, bordas, fundo, cor e a maneira como la é vista pelo HTML
     flex: 1;
     color: white;
     text-align: center;
-}
-
-@media (max-width: 900px) {
-    #page-home {
-        background-position-x: 70vw;
-    }
-
-    #page-home .content{
-        align-items: center;
-        text-align: center;
-    }
-
-    #page-home header a {
-        position: absolute;
-        bottom: 48px;
-
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    #page-home main {
-        align-items: center;
-    }
 }

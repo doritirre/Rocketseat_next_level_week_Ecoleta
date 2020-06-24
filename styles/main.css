@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+:root {
+    --title-color: #322153;
+    --primary-color: #34cb79;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Roboto, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'ubuntu', sans-serif; 
+   color: var(--title-color);
+}
+/* 
+Elementos inline deixam o que está ao lado ficar do lado.
+Já o elemento block passa para a outra linha
+Toda caixa que no caso é um display, contém largura, altura, espaçamento
+preenchimentos, bordas, fundo, cor e a maneira como la é vista pelo HTML
+*/
